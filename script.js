@@ -33,6 +33,10 @@ document.querySelector(".scores div #PTname").innerHTML = `${PlayerTwoNameInput}
 function RandomNumberGenrator(){
     PO.setAttribute("src", "./assets/dice.gif");
     PT.setAttribute("src", "./assets/dice.gif");
+
+    var audio = new Audio("./assets/dicerollsound.mp3")
+    audio.play();
+
     setTimeout(()=>{
     var RandomNumberOne = Math.floor(Math.random() * 6) + 1;
     var RandomNumberTwo =  Math.floor(Math.random() * 6) + 1;
@@ -56,12 +60,8 @@ function Winner(pOne, pTwo){
     }else{
         GameWinner.innerHTML = "it's a draw"
     }
-
 }
 
-function playAudio(){
-  
-        sound.play();}
     
 
 ShuffleBtn.addEventListener("click",RandomNumberGenrator)

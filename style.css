@@ -10,11 +10,17 @@ body {
   width: 100%;
   height: 100%;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+  color: #fff;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
   background-image: url(./assets/Background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  color: #fff;
 }
 
 .container {
